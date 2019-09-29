@@ -20,6 +20,8 @@ public class sc : MonoBehaviour
     void Start()
     {
         matSetter=mat[0];
+            Mdropdown.ClearOptions();
+        PopulateDropDown();
     
     }
 
@@ -29,7 +31,12 @@ public class sc : MonoBehaviour
         Indexer();
         //RenderSettings.skybox = one;
     }
-
+ void PopulateDropDown()
+    {
+        
+       Mdropdown.AddOptions(DD1);
+         
+    }
     public void Indexer ()
     {
         
